@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.actions {
+  h4 {
+    margin-bottom: 100px;
+  }
+  button:not(:last-child) {
+    margin-right: 50px;
+  }
+}
