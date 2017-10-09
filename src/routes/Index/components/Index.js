@@ -13,7 +13,7 @@ export class LoginView extends React.Component {
       <div>
         <Jumbotron>
           <div className='text-center' styleName='actions'>
-            <h3>imagizer</h3>
+            <h1>imagizer</h1>
             <h4>JavaScript image manipulation library</h4>
             <Button
               color='info'

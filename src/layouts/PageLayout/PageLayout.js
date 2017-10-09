@@ -9,10 +9,6 @@ import {
   Nav,
   NavItem,
   Container,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavLink
 } from 'reactstrap'
 import { Link } from 'react-router'
@@ -41,7 +37,7 @@ class PageLayout extends React.Component {
       <div styleName='layout'>
         <Navbar color='dark' dark expand='md'>
           <Container>
-            <NavbarBrand tag={Link} to='/'>Imagizer DemoApp</NavbarBrand>
+            <NavbarBrand tag={Link} to='/'>Imagizer</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar}/>
             <Collapse isOpen={this.state.isNavbarOpen} navbar>
               <Nav className='ml-auto' navbar>
