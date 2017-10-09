@@ -27,6 +27,7 @@ export class LoginView extends React.Component {
             </Button>
             <Button
               color='info'
+              outline
               onClick={() => {
                 browserHistory.push('/effects')
               }}

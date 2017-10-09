@@ -14,6 +14,7 @@ import PageLayout from './layouts/PageLayout/PageLayout'
 import IndexContainer from './routes/Index'
 import EffectsContainer from './routes/Effects'
 import DocumentationContainer from './routes/Documentation'
+import LayersContainer from './routes/Layers'
 
 const baseHistory = browserHistory
 const routingMiddleware = routerMiddleware(baseHistory)
@@ -38,6 +39,7 @@ ReactDOM.render(
           <IndexRoute component={IndexContainer}/>
           <Route path='effects' component={EffectsContainer}/>
           <Route path='documentation' component={DocumentationContainer}/>
+          <Route path='layers' component={LayersContainer}/>
         </Route>
       </Router>
     </div>

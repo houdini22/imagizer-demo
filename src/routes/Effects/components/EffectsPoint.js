@@ -459,7 +459,12 @@ export class LoginView extends React.Component {
   }
 
   componentDidMount () {
+    this.break = false
     this.renderEffect(0)
+  }
+
+  componentWillUnmount () {
+    this.break = true
   }
 
   renderEffect (i) {
@@ -467,6 +472,9 @@ export class LoginView extends React.Component {
 
     createInstance().then((project) => {
       const image = effects[i].callback(project)
+
+      if (this.break) return false
+
       this.setState({
         images: this.state.images.concat([image])
       })

@@ -49,6 +49,9 @@ class PageLayout extends React.Component {
                   <NavLink tag={Link} to='/documentation'>Docs</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink tag={Link} to='/layers'>Layers</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink tag={Link} to='/effects'>Effects</NavLink>
                 </NavItem>
                 <NavItem>
